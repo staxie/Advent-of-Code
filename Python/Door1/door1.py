@@ -2,12 +2,10 @@ puzzleInput = [1722, 1010, 300, 1337, 200, 299, 683]
 i = 0
 desiredNumber = 2020
 summands = []
-numbersFound = False
 
 def checkForDesiredNumber(n1, n2):
     if n1 + n2 == desiredNumber:
         print("Got it!")
-        numbersFound = True
         summands.append(n1)
         summands.append(n2)
         print(summands)
