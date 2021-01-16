@@ -1,5 +1,6 @@
-puzzleInput = [1722, 1010, 300, 1337, 200, 299, 683]
-
+file = open("door1.txt")
+listOfStringyNumbers = file.read().split()
+puzzleInput = list(map(int, listOfStringyNumbers))
 
 def searchNumbers(): 
     i = 0
