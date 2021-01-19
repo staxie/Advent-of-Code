@@ -16,12 +16,13 @@ def multiplyNumbers(n1, n2):
     return n1*n2
 
 
-print("Looking for your numbers... (╯°□°）╯︵ ┻━┻")
-if searchNumbers(puzzle_input, desired_number):
-    numbers_to_multiply = searchNumbers(puzzle_input, desired_number)
-    print("Got it! ┬─┬ ノ( ゜-゜ノ)")
+print("🔍 Looking for your numbers...")
+
+numbers_to_multiply = searchNumbers(puzzle_input, desired_number)
+if numbers_to_multiply:
+    print("🧙‍♂️ Got them!")
     print("/", numbers_to_multiply[0], "&", numbers_to_multiply[1], "/")
-    print("Now multiplying the numbers...")
-    print("Here is your final number:", multiplyNumbers(numbers_to_multiply[0], numbers_to_multiply[1]))
+    print("🧪 Now multiplying the numbers...")
+    print("🥳 Here is your final number:", multiplyNumbers(numbers_to_multiply[0], numbers_to_multiply[1]))
 else:
-    print("Couldn't find matching numbers. (╯°□°）╯︵ ┻━┻")
+    print("Couldn't find matching numbers. (ノಠ益ಠ)ノ彡┻━┻")
