@@ -17,8 +17,11 @@ def multiplyNumbers(n1, n2):
 
 
 print("Looking for your numbers... (╯°□°）╯︵ ┻━┻")
-numbers_to_multiply = searchNumbers(puzzle_input, desired_number)
-print("Got it! ┬─┬ ノ( ゜-゜ノ)")
-print("/", numbers_to_multiply[0], "&", numbers_to_multiply[1], "/")
-print("Now multiplying the numbers...")
-print("Here is your final number:", multiplyNumbers(numbers_to_multiply[0], numbers_to_multiply[1]))
+if searchNumbers(puzzle_input, desired_number):
+    numbers_to_multiply = searchNumbers(puzzle_input, desired_number)
+    print("Got it! ┬─┬ ノ( ゜-゜ノ)")
+    print("/", numbers_to_multiply[0], "&", numbers_to_multiply[1], "/")
+    print("Now multiplying the numbers...")
+    print("Here is your final number:", multiplyNumbers(numbers_to_multiply[0], numbers_to_multiply[1]))
+else:
+    print("Couldn't find matching numbers. (╯°□°）╯︵ ┻━┻")
